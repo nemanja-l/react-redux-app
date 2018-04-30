@@ -1,0 +1,50 @@
+/* containers scss */
+.activity-page .title {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px 0; }
+
+.activity-page .image {
+  margin-top: 50px; }
+
+.city-page {
+  padding: 100px 0px; }
+  .city-page .city-name {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+    font-weight: 500; }
+    .city-page .city-name span {
+      color: #087e8b; }
+
+/* components scss */
+.activity {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 20px auto;
+  border: 1px solid #dadad9;
+  box-shadow: 0px 8px 14px rgba(10, 10, 10, 0.08);
+  border-radius: 4px;
+  min-height: 230px; }
+  .activity .image-holder {
+    width: 100%;
+    overflow: hidden; }
+    .activity .image-holder img {
+      width: 100%; }
+  .activity .title {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+    cursor: pointer; }
+    .activity .title:hover {
+      text-decoration: underline; }
+
+.loader {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; }

@@ -1,0 +1,21 @@
+.activity {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 20px auto;
+  border: 1px solid #dadad9;
+  box-shadow: 0px 8px 14px rgba(10, 10, 10, 0.08);
+  border-radius: 4px;
+  min-height: 230px; }
+  .activity .image-holder {
+    width: 100%;
+    overflow: hidden; }
+    .activity .image-holder img {
+      width: 100%; }
+  .activity .title {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+    cursor: pointer; }
+    .activity .title:hover {
+      text-decoration: underline; }

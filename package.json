@@ -1,0 +1,47 @@
+{
+  "name": "React-Redux-App",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.0",
+    "react-scripts": "^1.0.17"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "foundation-sites": "^6.4.4-rc1",
+    "node-sass-chokidar": "^1.2.2",
+    "npm-run-all": "^4.1.2",
+    "qs": "^6.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-loading": "^2.0.2",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "next",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "sanitize.css": "^5.0.0"
+  },
+  "scripts": {
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
