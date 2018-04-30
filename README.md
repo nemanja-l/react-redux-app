@@ -1,7 +1,7 @@
 ## Installation
 
 ```bash
-git clone git@github.com:nemanja-l/react-redux-app.git
+git clone https://github.com/nemanja-l/react-redux-app.git
 cd react-redux-app
 yarn
 ```
